@@ -332,10 +332,10 @@ h6 {
   color: #2586e4;
 }
 .color-yellow {
-  color: #ff9000;
+  color: #e8d814;
 }
 .color-green {
-  color: #20a286;
+  color: #16d247;
 }
 .color-darkblue {
   color: #2c3e50;
@@ -375,7 +375,7 @@ h6 {
   transition: 0.2s;
 }
 .hover-yellow:hover {
-  color: #ff9000 !important;
+  color: #e8d814 !important;
 }
 .box-shadow {
   box-shadow: 0 4px 10px #999 !important;
@@ -510,6 +510,10 @@ h6 {
   width: 40px;
   height: 40px;
 }
+.square35 {
+  width: 35px;
+  height: 35px;
+}
 .square30 {
   width: 30px;
   height: 30px;
@@ -596,10 +600,10 @@ h6 {
   background: #2586e4;
 }
 .back-green {
-  background: #20a286;
+  background: #16d247;
 }
 .back-yellow {
-  background: #ff9000 !important;
+  background: #e8d814 !important;
 }
 .back-red {
   background: #ca0000;
@@ -629,7 +633,7 @@ h6 {
   background: #fff !important;
 }
 .back-yellow {
-  background: #ff9000;
+  background: #e8d814;
 }
 .back-lightgray {
   background: #adb5bd;
@@ -742,7 +746,7 @@ opacity 0,
   background: #212224;
 }
 .my-input:focus {
-  border: 2px solid #ff9000;
+  border: 2px solid #e8d814;
 }
 .my-input-search {
   width: 260px;
@@ -758,14 +762,14 @@ opacity 0,
   font-size: 1.15em;
 }
 .my-input-search input {
-  color: #ff9000;
+  color: #e8d814;
   padding: 5px 0 5px 16px;
   border: 0;
   font-size: 0.9em;
   width: 95%;
 }
 :focus {
-  border-color: #ff9000;
+  border-color: #e8d814;
 }
 .vdp-datepicker input {
   width: 100%;
@@ -779,7 +783,7 @@ opacity 0,
   background: #111;
 }
 .vdp-datepicker input:focus {
-  border-color: #ff9000;
+  border-color: #e8d814;
 }
 .vdp-datepicker__calendar {
   width: auto !important;
@@ -1133,6 +1137,7 @@ label:hover:before {
   top: 50px;
   left: -70px;
   transition: 0.5s;
+  z-index: 1000000000;
 }
 .avatar-menu-list {
   background: #222;
@@ -1168,11 +1173,13 @@ label:hover:before {
 }
 .project-card-header-icon {
   font-size: 3.5em;
-  margin-right: 0.5em;
 }
 .project-card-header-title {
   font-size: 1.2em;
   color: #fff;
+}
+.project-card {
+  width: 320px;
 }
 .project-card-header {
   position: relative;
@@ -1235,6 +1242,12 @@ label:hover:before {
   padding: 15px;
   text-align: center;
   border-right: 1px solid #4e89a5;
+}
+.calendar-tasks {
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 15px;
 }
 .calendar-day {
   color: #7d7878;

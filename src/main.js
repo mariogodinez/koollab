@@ -11,6 +11,9 @@ import Calendar from './components/Calendar.vue'
 import AddProject from './components/AddProject.vue'
 import Hours from './components/Hours.vue'
 import Messages from './components/Messages.vue'
+import ProjectView from './components/ProjectView.vue'
+import ToDos from './components/ToDos.vue'
+
 
 import VueRouter from 'vue-router'
 import Vuesax from 'vuesax'
@@ -63,6 +66,9 @@ let routes = [
   {path: '/agregar-proyecto', component: AddProject, beforeEnter:scrollTop},
   {path: '/horarios', component: Hours, beforeEnter:scrollTop},
   {path: '/mensajes', component: Messages, beforeEnter:scrollTop},
+  {path: '/vista-proyecto', name: 'projectView', component: ProjectView, beforeEnter:scrollTop},
+  {path: '/to-dos', component: ToDos, beforeEnter:scrollTop},
+
 
 ]
 

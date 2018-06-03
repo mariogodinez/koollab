@@ -8,13 +8,10 @@
 		data(){
 			return {
 				spiner: false,
+				
 				userInfo: {
-					user: 'mariogodinezmedina@gmail.com',
-					password: 'loudwhale46'
-				},
-				userInfo: {
-					user: 'mariogodinezmedina@gmail.com',
-					password: 'loudwhale46'
+					user: 'toto@tanoshii.me',
+					password: '123miau'
 				},
 				errorMessage: 'Las credenciales no coinciden.',
 				error: false
@@ -24,6 +21,15 @@
 		computed:{
 			logged(){
 				return this.$store.getters.logged
+			},
+			spin(){
+				return this.$store.getters.spin
+			}
+			,
+			goto(){
+				console.log(this.$store.getters.goto)
+				return 5
+
 			}
 		},
 		created(){
@@ -45,9 +51,9 @@
 	}
 </script>
 
-<template class="padding0 ">
+<template v-if="token" class="padding0 ">
 	<section class="height100vh padding0" style="padding-top: 0px !important;">
-	<Spiner v-if="spiner"></Spiner>
+	<Spiner v-if="spin"></Spiner>
 		<article class="font1-3em back-black flex flex-center relative flex-middle height100vh">
 			<transition appear name="custom-classes-transition" appear-active-class="animated flipInY" enter-active-class="animated flipInY" leave-active-class="">
 				<article class="relative login" style="top:-20px;">

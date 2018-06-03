@@ -28,7 +28,7 @@
     "rimraf": "^2.6.2",
     "vue": "^2.0.1",
     "vue-router": "^3.0.1",
-    "vuejs-datepicker": "^0.9.22",
+    "vuejs-datepicker": "^0.9.29",
     "vuesax": "^3.0.46",
     "vuex": "^3.0.1"
   },

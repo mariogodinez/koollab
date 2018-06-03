@@ -31,7 +31,7 @@
 		<article>
 			<section class="my-container padding20">
                 <h3 class="margin-left10 color-blue padding-left10" style=" border-left:5px solid;">
-                    <span class="color-black font-normal font1-3em">Hola Mario, Bienvenido!</span>
+                    <span class="color-black font-normal font1-3em">Hello Mario, Welcome again!</span>
                 </h3>
             </section>
 

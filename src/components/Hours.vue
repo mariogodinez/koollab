@@ -15,11 +15,13 @@
 				sunday:[
 					{
 						value: false,
-						text: '0 - 1'
+						text: '0 - 1',
+						id: 0
 					},
 					{
 						value: false,
-						text: '1 - 2'
+						text: '1 - 2',
+						id: 1,
 					},
 					{
 						value: false,
@@ -334,27 +336,27 @@
 
 		<section class="my-container padding20">
             <h3 class="margin-left10 color-blue padding-left10" style=" border-left:5px solid;">
-                <span class="color-black font-normal font1-3em">Horarios disponibles a trabajar</span>
+                <span class="color-black font-normal font1-3em">Available time</span>
             </h3>
         </section>
 		<article class="home-list  my-container">
 			<section class="box padding20 relative">
 				<div class=" absolute flex flex-middle" style="top:10px; right:30px;">
-					<p v-tooltip="'Ver mas horarios'">
+					<p v-tooltip="'See more'">
 						<span class="ion-eye font1-5em pointer"></span>
 					</p>
 
-					<p class="margin-left20" v-tooltip="'Configuracion de horas'">
+					<p class="margin-left20" v-tooltip="'Configuration'">
 						<span class="ion-gear-b font1-5em pointer"></span>
 					</p>
 						
 				</div>
 				<div>
-					<p class="font1-3em">Selecciona las casillas de las horas que estas disponible.</p>
+					<p class="font1-3em">Choose the hours you are available to work.</p>
 				</div>
 				<section class="calendar margin-top20 flex">
 	                <article class="width100">
-	                    <div class="back-blue calendar-day-name">Domingo</div>
+	                    <div class="back-blue calendar-day-name">Sunday</div>
 	                        <div class="calendar-day"  style="border-left: 1px solid #ccc; overflow-y:auto;">
 	                        	<div v-for="i in sunday" class="flex flex-middle">
 	                        		<vs-checkbox v-model="i.value"></vs-checkbox>
@@ -364,7 +366,7 @@
 	                    </article>
 
 	                    <article class="width100">
-	                        <div class="back-blue calendar-day-name">Lunes</div>
+	                        <div class="back-blue calendar-day-name">Monday</div>
 	                        <div class="calendar-day"  style="border-left: 1px solid #ccc; overflow-y:auto;">
 	                        	<div v-for="i in monday" class="flex flex-middle">
 	                        		<vs-checkbox v-model="i.value"></vs-checkbox>
@@ -375,7 +377,7 @@
 	                    </article>
 
 	                    <article class="width100">
-	                        <div class="back-blue calendar-day-name">Martes</div>
+	                        <div class="back-blue calendar-day-name">Tuesday</div>
 	                        <div class="calendar-day"  style="border-left: 1px solid #ccc; overflow-y:auto;">
 	                        	<div v-for="i in thursday" class="flex flex-middle">
 	                        		<vs-checkbox v-model="i.value"></vs-checkbox>
@@ -389,7 +391,7 @@
 
 
 	                    <article class="width100">
-	                        <div class="back-blue calendar-day-name">Miércoles</div>
+	                        <div class="back-blue calendar-day-name">Wednesday</div>
 	                        <div class="calendar-day">
 	                            <h3 class="calendar-day-number">1</h3>
 	                        </div>
@@ -399,7 +401,7 @@
 
 
 	                    <article class="width100">
-	                        <div class="back-blue calendar-day-name">Jueves</div>
+	                        <div class="back-blue calendar-day-name">Thursday</div>
 	                        <div class="calendar-day">
 	                            <h3 class="calendar-day-number">1</h3>
 	                        </div>
@@ -408,7 +410,7 @@
 	                    </article>
 
 	                     <article class="width100">
-	                        <div class="back-blue calendar-day-name">Viernes</div>
+	                        <div class="back-blue calendar-day-name">Friday</div>
 	                        <div class="calendar-day">
 	                            <h3 class="calendar-day-number">1</h3>
 	                        </div>
@@ -417,27 +419,24 @@
 	                    </article>
 
 	                     <article class="width100">
-	                        <div class="back-blue calendar-day-name">Sábado</div>
+	                        <div class="back-blue calendar-day-name">Saturday</div>
 	                        <div class="calendar-day">
 	                            <h3 class="calendar-day-number">1</h3>
 	                        </div>
 
-	                       
 	                    </article>
-
-
 	                </section>
 
 	                <div class="margin-top20 text-center flex flex-center">
-                            <vs-button vs-radius="2px" vs-type="primary-border"><span class="text-uppercase font1-3em">guardar Horarios</span></vs-button>
-                        </div>
+                        <vs-button vs-radius="2px" vs-type="primary-border"><span class="text-uppercase font1-3em">Save Changes</span></vs-button>
+                    </div>
 				</section>
 				<div class="flex">
 					<div class="box padding20 width100">
-						<h3 class=" text-center">Ver AvTime de otros</h3>
+						<h3 class=" text-center">See other's AvTime</h3>
 					</div>
 					<div class="box padding20 width100">
-						<h3 class=" text-center">Mas acciones</h3>
+						<h3 class=" text-center">More actions</h3>
 					</div>
 				</div>
         </article>

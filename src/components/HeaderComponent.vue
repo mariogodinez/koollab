@@ -58,7 +58,7 @@
                         <div class="avatar-menu absolute">
                         	<ul class="avatar-menu-list">
                         		<li class="avatar-menu-list-item">
-                        			Perfil
+                        			Profile
                         		</li>
 
                         		<li class="avatar-menu-list-item" @click="goTo('/horarios')">
@@ -66,14 +66,12 @@
                         		</li>
 
                         		<li class="avatar-menu-list-item">
-                        			Perfil
+                        			Profile
                         		</li>
                         	</ul>
                         </div>
 
                     </div>
-                    <p class="margin-left10">Mario</p>
-
                 </div>
             </section>
         </header>
@@ -81,23 +79,23 @@
         <article class=" back-white flex flex-middle padding15">
             <section class="flex flex-middle  my-container menu-list">
                 <div class="menu-list-item width100">
-                    <router-link to="/inicio" class="flex width100 flex-center"><span class="ion-home margin-right5" ></span>Inicio</router-link>
+                    <router-link to="/inicio" class="flex width100 flex-center"><span class="ion-home margin-right5" ></span>Home</router-link>
                 </div>
 
                 <div class="menu-list-item width100">
-                    <router-link to="/proyectos" class="flex width100 flex-center"><span class="margin-right5 ion-grid"></span>Proyectos</router-link>
+                    <router-link to="/proyectos" class="flex width100 flex-center"><span class="margin-right5 ion-grid"></span>Projects</router-link>
                 </div>
 
                 <div class="menu-list-item width100">
-                    <router-link to="/agenda"class="flex width100 flex-center"><span class="ion-calendar margin-right5"></span>Calendario</router-link>
+                    <router-link to="/agenda"class="flex width100 flex-center"><span class="ion-calendar margin-right5"></span>Calendar</router-link>
                 </div>
 
                 <div class="menu-list-item width100">
-                    <router-link to="/mensajes" class="flex width100 flex-center flex-middle"><span class="ion-chatbox-working margin-right5" ></span>Mensajes <span class="rounded margin-left5" style="background: #205FCF; width:10px; height: 10px;"></span></router-link>
+                    <router-link to="/mensajes" class="flex width100 flex-center flex-middle"><span class="ion-chatbox-working margin-right5" ></span>Menssages <span class="rounded margin-left5" style="background: #205FCF; width:10px; height: 10px;"></span></router-link>
                 </div>
 
                 <div class="menu-list-item width100">
-                    <router-link to="/to-dos" class="flex width100 flex-center"><span class="ion-document-text margin-right5"></span>To-do</router-link>
+                    <router-link to="/to-dos" class="flex width100 flex-center"><span class="ion-document-text margin-right5"></span>To-dos</router-link>
                 </div>
             </section>
         </article>

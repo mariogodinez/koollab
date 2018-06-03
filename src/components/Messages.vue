@@ -78,7 +78,7 @@
                                     <p>Mayo 14</p>
                                 </div>
                                 <p style="font-size:.9em;">
-                                    Hola Mario, te he enviado unos cuantos bitcoins para que te tomes una chelas, Disfruta!
+                                    Hola Mario, I have sent you bitcoins for some  chelas,  Enjoy it!
                                 </p>
                             </div>
                         </section>
@@ -99,7 +99,7 @@
                                         <h4>Mark Suzxker</h4>
                                     </div>
                                     <p style="font-size:.9em;">
-                                       Última visita: 12:43 hrs.
+                                       Last seen: 12:43 hrs.
                                     </p>
                                 </article>
 
