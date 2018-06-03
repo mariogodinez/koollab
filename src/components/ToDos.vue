@@ -48,6 +48,29 @@ ToDos.vue<script>
                         value: false,
                         text: 'Make SocketS conection PTT'
                     }
+                ],
+
+                allMyTaks2:[
+                    {
+                        value: true,
+                        text: 'Upload to server both files'
+                    },
+                    {
+                        value: true,
+                        text: 'Fix css padding on landing page'
+                    },
+                    {
+                        value: false,
+                        text: 'Upload to server both files'
+                    },
+                    {
+                        value: true,
+                        text: 'Fix css padding on landing page'
+                    },
+                    {
+                        value: false,
+                        text: 'Make SocketS conection PTT'
+                    }
                 ]
 			}
 		},
@@ -58,6 +81,18 @@ ToDos.vue<script>
 			per(){
                 let length = this.allMyTaks.length
                 let lengthDone = this.allMyTaks.filter(item => item.value).length
+
+                if(lengthDone){
+                    let result = parseInt((lengthDone / length) * 100)
+                  return result
+              } else {
+                return 0
+              }
+                
+            },
+            per2(){
+                let length = this.allMyTaks2.length
+                let lengthDone = this.allMyTaks2.filter(item => item.value).length
 
                 if(lengthDone){
                     let result = parseInt((lengthDone / length) * 100)
@@ -102,7 +137,7 @@ ToDos.vue<script>
                 <div class="box width100 padding10">
                      
                      <article class="padding20">
-                         <h3>All My To-Do List</h3>
+                         <h3>Web app</h3>
 
                          <article class="margin10">
                             <div v-for="i in allMyTaks" class="flex flex-middle">
@@ -125,6 +160,26 @@ ToDos.vue<script>
 
 
                 <div class="box width100">
+
+                <article class="padding20">
+                         <h3>Gaby's proyect</h3>
+
+                         <article class="margin10">
+                            <div v-for="i in allMyTaks2" class="flex flex-middle">
+                                <vs-checkbox v-model="i.value"></vs-checkbox>
+                                <p class="color-black font1em " :class="{textOver : i.value}">{{i.text}}.</p>
+                            </div>
+                         </article>
+                     </article>
+                     <div class=" margin10-0 flex flex-middle" style="border-radius:10px; padding:0 8px; width:98%;">
+                        <div class=" width100" v-tooltip="'My task percent'" style="padding:4px; border-radius:10px; background:#ddd;">
+                            <div class="padding5 back-blue" style="border-radius:10px;" :style="{width: per2 + '%'}">
+                                
+                            </div>
+                        </div>
+                    
+                        <span class="margin-left5 font-bold font1-3em"> {{ per2 }}% </span>
+                    </div>
                     
                 </div>
 

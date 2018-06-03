@@ -88,7 +88,7 @@ const actions = {
 						 	commit('SET_SPIN', false)
 						 	commit('SET_GOTO', true)
 						 	commit('SET_USER', user.user.displayName)
-						 	window.location.href = '#/inicio'
+						 	window.location.href = '#/proyectos'
 		 					localStorage.tokenKK = res.data.token
 		 					localStorage.user = res.data.user
 

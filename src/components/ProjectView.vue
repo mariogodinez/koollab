@@ -160,7 +160,7 @@
                          </article>
                      </article>
                      <div class=" margin10-0 flex flex-middle" style="border-radius:10px; padding:0 8px; width:98%;">
-                        <div class=" width100" v-tooltip="'My task percent'" style="padding:4px; border-radius:10px; background:#ddd;">
+                        <div class=" width100" v-tooltip="'My personal progress'" style="padding:4px; border-radius:10px; background:#ddd;">
                             <div class="padding5 back-blue" style="border-radius:10px;" :style="{width: per + '%'}">
                                 
                             </div>

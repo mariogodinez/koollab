@@ -58,7 +58,7 @@
 			<transition appear name="custom-classes-transition" appear-active-class="animated flipInY" enter-active-class="animated flipInY" leave-active-class="">
 				<article class="relative login" style="top:-20px;">
 					<div class="margin-bottom10 text-center color-blue">
-						<span style="font-size:4em;">K</span>
+						<span style="font-size:4em;">Koollab</span>
 					</div>
 					<div id="login-form" class="flex flex-column flex-middle flex-center">
 						<div class="flex width100 margin-bottom10">
